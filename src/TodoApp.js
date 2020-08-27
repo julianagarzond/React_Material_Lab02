@@ -71,9 +71,9 @@ export class TodoApp extends Component {
                         onChange={this.handleDateChange}>
                     </DatePicker>
                     <br/>
-                    <Button  color='Dark' variant='contained' >
+                    <button  color='Dark' variant='contained' >
                         Add #{this.state.items.length + 1}
-                    </Button>
+                    </button>
                 </form>
                 <br/>
                 <br/>

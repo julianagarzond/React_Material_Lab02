@@ -10,6 +10,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import './Login.css';
 import {App} from './App';
+import { Link } from 'react-router-dom';
 
 
 export class Login extends React.Component{
@@ -41,6 +42,7 @@ export class Login extends React.Component{
                                     autoComplete="current-password"
                                 />
                             </FormControl>
+                        <Link to = '/todo' >
                             <Button
                                 type="submit"
                                 fullWidth
@@ -49,8 +51,10 @@ export class Login extends React.Component{
                                 className="submit"
                                 onClick={this.handleLogin}
                             >
+                        
                                 Sign in
                             </Button>
+                        </Link>
                         </form>
                     </Paper>
                 </main>
